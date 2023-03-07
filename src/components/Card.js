@@ -9,9 +9,10 @@ const yearName = new Date().getFullYear();
 
 
 function Card(props) {
+    const {titleText, decText} = props;
     return <div className='card'>
-                <h3 className='cardTitle'>{props.titleText}</h3>
-                <h3 className='cardDes'>{props.decText}</h3>
+                <h3 className='cardTitle'>{titleText}</h3>
+                <h3 className='cardDes'>{decText}</h3>
                 <p className='cardFooter'>{dateName + '/' + monthName + '/' + yearName}</p>
             </div>
 }
